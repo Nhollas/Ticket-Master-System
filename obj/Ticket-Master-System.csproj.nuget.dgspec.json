@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nhollas\\Documents\\GitHub\\Ticket-Master-System\\Ticket-Master-System.csproj": {}
+    "c:\\Users\\Nhollas\\Documents\\GitHub\\Ticket-Master-System\\Ticket-Master-System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nhollas\\Documents\\GitHub\\Ticket-Master-System\\Ticket-Master-System.csproj": {
+    "c:\\Users\\Nhollas\\Documents\\GitHub\\Ticket-Master-System\\Ticket-Master-System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nhollas\\Documents\\GitHub\\Ticket-Master-System\\Ticket-Master-System.csproj",
+        "projectUniqueName": "c:\\Users\\Nhollas\\Documents\\GitHub\\Ticket-Master-System\\Ticket-Master-System.csproj",
         "projectName": "Ticket-Master-System",
-        "projectPath": "C:\\Users\\Nhollas\\Documents\\GitHub\\Ticket-Master-System\\Ticket-Master-System.csproj",
+        "projectPath": "c:\\Users\\Nhollas\\Documents\\GitHub\\Ticket-Master-System\\Ticket-Master-System.csproj",
         "packagesPath": "C:\\Users\\Nhollas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nhollas\\Documents\\GitHub\\Ticket-Master-System\\obj\\",
+        "outputPath": "c:\\Users\\Nhollas\\Documents\\GitHub\\Ticket-Master-System\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nhollas\\AppData\\Roaming\\NuGet\\NuGet.Config",

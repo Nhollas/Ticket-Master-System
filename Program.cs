@@ -4,21 +4,26 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        List<Seat> _seatList = new();
         Methods methods = new();
+        Questions questions = new();
+        List<Seat> _seatList = new();
 
-        Console.WriteLine("How many tickets would you like to purchase? (1-6)");
-        int.TryParse(Console.ReadLine(), out int ticketCount);
+        // Usually these types of calls would be asynchronous...
 
-        if (ticketCount == 0)
-        {
-            Console.WriteLine("The value you provided was not valid.");
-            return;
-        }
-
+        // Initialize seat list data.
         _seatList = methods.GenerateSeats().Result;
 
-        _seatList = methods.BookSeats(_seatList, ticketCount).Result;
+        // Show seat diagram in the console.
+        Methods.ShowGUI(_seatList);
+
+        // Ask how many tickets the user wants.
+        int ticketCount = questions.AskTicketCount().Result;
+
+        // Ask if they want the seats they buy to be togther.
+        bool joinedSeats = questions.AskJoinedSeats().Result;
+
+        // Based on the users input, try to book seats with the users requirements.
+        _seatList = methods.BookSeats(_seatList, ticketCount, joinedSeats).Result;
 
         if (_seatList.Count == 0)
         {
@@ -26,7 +31,7 @@ internal class Program
             return;
         }
 
-        Console.WriteLine("Your purchased seats are:");
+        Console.WriteLine("Your seats are:");
         foreach (Seat seat in _seatList)
         {
             Console.WriteLine(seat.Number);
@@ -34,8 +39,9 @@ internal class Program
     }
 
     /* Ideas / TODOs:
-       1. Let user choose if they want the seats to be joined or not.
-       2. Allow for tickets to be purchased on seperate rows.
-       3. Print out a GUI diagram of the seats. 
+       1. Let user choose if they want the seats to be joined or not ✓✓
+       2. Allow for tickets to be purchased on seperate rows. ?? (Might be silly).
+       3. Print out a GUI diagram of the seats ✓✓
     */
 }
+
