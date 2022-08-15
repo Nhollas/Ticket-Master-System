@@ -1,0 +1,15 @@
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\bin\Debug\net6.0\Ticket-Master-System.exe
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\bin\Debug\net6.0\Ticket-Master-System.deps.json
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\bin\Debug\net6.0\Ticket-Master-System.runtimeconfig.json
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\bin\Debug\net6.0\Ticket-Master-System.dll
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\bin\Debug\net6.0\Ticket-Master-System.pdb
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\obj\Debug\net6.0\Ticket-Master-System.csproj.AssemblyReference.cache
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\obj\Debug\net6.0\Ticket-Master-System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\obj\Debug\net6.0\Ticket-Master-System.AssemblyInfoInputs.cache
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\obj\Debug\net6.0\Ticket-Master-System.AssemblyInfo.cs
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\obj\Debug\net6.0\Ticket-Master-System.csproj.CoreCompileInputs.cache
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\obj\Debug\net6.0\Ticket-Master-System.dll
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\obj\Debug\net6.0\refint\Ticket-Master-System.dll
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\obj\Debug\net6.0\Ticket-Master-System.pdb
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\obj\Debug\net6.0\Ticket-Master-System.genruntimeconfig.cache
+C:\Users\Nhollas\Documents\GitHub\Ticket-Master-System\obj\Debug\net6.0\ref\Ticket-Master-System.dll
