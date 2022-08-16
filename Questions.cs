@@ -1,7 +1,7 @@
 ﻿namespace Ticket_Master_System;
 internal class Questions
 {
-    public Task<int> AskTicketCount()
+    public int AskTicketCount()
     {
         int ticketCount = 0;
         int ticketResult = 0;
@@ -29,10 +29,10 @@ internal class Questions
 
         } while (ticketCount == 0);
 
-        return Task.FromResult(ticketResult);
+        return ticketResult;
     }
 
-    public Task<bool> AskJoinedSeats()
+    public bool AskJoinedSeats()
     {
         bool joinedSeats = false;
         int joinedResult = 0;
@@ -61,6 +61,6 @@ internal class Questions
 
         } while (joinedResult == 0);
 
-        return Task.FromResult(joinedSeats);
+        return joinedSeats;
     }
 }

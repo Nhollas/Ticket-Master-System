@@ -1,4 +1,8 @@
-### Examples of console app running.
+### Example of console app running
+
+*16-08-2022*
+
+##### Functionality
 
 ![](https://media0.giphy.com/media/CM9CkqeuFSf4uNKkPT/giphy.gif?cid=790b7611131c21bd075ef7869faee4c82a49147b3192d3e9&rid=giphy.gif&ct=g)
 

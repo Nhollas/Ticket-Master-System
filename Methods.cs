@@ -6,7 +6,7 @@ internal class Methods
         The example requirement stated that there are 6 seats in each row.
         And a total of 10 rows, meaning there are 60 seats.
      */
-    public Task<List<Seat>> GenerateSeats()
+    public List<Seat> GenerateSeats()
     {
         List<Seat> seats = new();
         int seatsFilled = 0;
@@ -34,7 +34,7 @@ internal class Methods
         // The example requirement stated we should give seats from back to front.
         seats.Reverse();
 
-        return Task.FromResult(seats);
+        return seats;
     }
 
     public static bool FilledSeat()
@@ -93,7 +93,7 @@ internal class Methods
         Console.WriteLine("");
     }
 
-    public Task<List<Seat>> BookSeats (List<Seat> seats, int ticketCount, bool joinedSeats)
+    public List<Seat> BookSeats (List<Seat> seats, int ticketCount, bool joinedSeats)
     {
         int filledSeats = 0;
         List<Seat> selectedSeats = new();
@@ -139,6 +139,6 @@ internal class Methods
                 }
             }
         }
-        return Task.FromResult(selectedSeats);
+        return selectedSeats;
     }
 }

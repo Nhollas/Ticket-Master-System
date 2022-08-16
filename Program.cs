@@ -6,36 +6,43 @@ internal class Program
     {
         Methods methods = new();
         Questions questions = new();
-        List<Seat> _seatList = new();
+        List<Seat> seatList = new();
 
-        // Usually these types of calls would be asynchronous...
+        // Usually these types of method calls would be asynchronous...
 
         // Initialize seat list data.
-        _seatList = methods.GenerateSeats().Result;
+        seatList = methods.GenerateSeats();
 
         // Show seat diagram in the console.
-        Methods.ShowGUI(_seatList);
+        Methods.ShowGUI(seatList);
 
         // Ask how many tickets the user wants.
-        int ticketCount = questions.AskTicketCount().Result;
+        int ticketCount = questions.AskTicketCount();
 
         // Ask if they want the seats they buy to be togther.
-        bool joinedSeats = questions.AskJoinedSeats().Result;
+        bool joinedSeats = questions.AskJoinedSeats();
 
         // Based on the users input, try to book seats with the users requirements.
-        _seatList = methods.BookSeats(_seatList, ticketCount, joinedSeats).Result;
+        seatList = methods.BookSeats(seatList, ticketCount, joinedSeats);
 
-        if (_seatList.Count == 0)
+        if (seatList.Count == 0)
         {
             Console.WriteLine("We were unable to book the seats you wanted, please try again.");
             return;
         }
 
-        Console.WriteLine("Your seats are:");
-        foreach (Seat seat in _seatList)
+        string output = "Your seats are: ";
+
+        foreach (Seat seat in seatList)
         {
-            Console.WriteLine(seat.Number);
+            output = output + seat.Number + ", ";
+
+            if (seatList.Last() == seat)
+            {
+                output = output + seat.Number + ".";
+            }
         }
+        Console.WriteLine(output);
     }
 
     /* Ideas / TODOs:
